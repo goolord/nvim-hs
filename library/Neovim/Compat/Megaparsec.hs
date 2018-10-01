@@ -21,9 +21,8 @@ import           Text.Megaparsec.String as X
 
 #endif
 
-#if MIN_VERSION_megaparsec(6,0,0)
+#if MIN_VERSION_megaparsec(7,0,0)
+anyChar :: Parser Char
 anyChar = anySingle
-#else
-anyCar = anyChar
 #endif
 
